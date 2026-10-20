@@ -1,0 +1,21 @@
+# usage-bar
+
+Строка над полем ввода Claude с текущим расходом лимитов: 5-часовая сессия и неделя (процент и время до сброса), заполнение контекста и стоимость сессии. Жёлтая от 70%, красная от 90%. Команда `/usage-bar` скрывает и показывает строку.
+
+## Установка
+
+В приложении Claude: «+» рядом с полем ввода → Plugins → Add marketplace → `ksg164/usage-bar` → Add plugin.
+
+В терминальной сессии Claude Code:
+
+```
+/plugin install usage-bar --marketplace ksg164/usage-bar
+```
+
+Из командной строки:
+
+```
+claude plugin install usage-bar --marketplace ksg164/usage-bar
+```
+
+Репозиторий приватный: установка работает только там, где у компьютера уже есть доступ к GitHub (`gh auth login`, затем `gh auth setup-git`).
